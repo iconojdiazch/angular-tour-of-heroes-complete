@@ -1,0 +1,11 @@
+cd angular-tour-of-heroes-complete
+yarn
+npm start (es posible que falle)
+npm run lite
+Si se realizan cambios:
+cd app
+del *.js
+del *.map
+cd ..
+npm start
+npm run lite
