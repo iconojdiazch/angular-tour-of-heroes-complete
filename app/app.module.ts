@@ -15,6 +15,10 @@ import { HeroService } from "./hero.service";
 import {HeroSearchComponent} from "./hero-search.component";
 
 import { HomeComponent } from './home.component';
+import { AuthenticationService } from './authentication.service';
+import { LoginComponent } from './login.component';
+
+import { CanActivateAuthGuard } from './can-activate.authguard';
 
 @NgModule({
   imports:      [
@@ -29,9 +33,10 @@ import { HomeComponent } from './home.component';
 	  HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, AuthenticationService, CanActivateAuthGuard ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
