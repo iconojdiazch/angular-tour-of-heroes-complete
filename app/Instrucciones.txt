@@ -1,7 +1,6 @@
 cd angular-tour-of-heroes-complete
 yarn
-npm start (es posible que falle)
-npm run lite
+npm start (Es posible que falle. Entonces, npm run lite)
 Si se realizan cambios:
 cd app
 del *.js
